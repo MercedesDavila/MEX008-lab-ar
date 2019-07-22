@@ -3,9 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
+
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lab&lt;ar</title>
@@ -25,7 +30,7 @@
         <ul class="menu">
             <li><a href="#Travel">Viaja</a></li>
             <li><a href="#Drive">Conduce</a></li>
-            <li><a href="#Login">Inicia sesión</a></li>
+            <li><a href="#Login" id="login-button">Inicia sesión</a></li>
         </ul>
     </header>
 
@@ -39,19 +44,17 @@
                 Eres dueño de tu tiempo.
             </h2>
             <h2>Viaja con <img src="img/logo-blanco.png" alt="logo blanco"></h2>
-            <button type="button" class="hero-button" onclick="">
-                    REGISTRATE! &raquo;
+            <button type="button" class="hero-button"><a href="#signup" id="signup-button">
+                    REGISTRATE! &raquo;</a>
                </button>
             <br>
             <h2 class="hero-subtitle"> ---------- o bien ----------</h2>
-            <button type="button" class="hero-button" onclick="">
+            <button id="driver" type="button" class="hero-button" onclick="">
                 Conviértete en un conductor &raquo;
            </button>
         </div>
 
-
-
-        <div id="info-mobile">
+        <div class="info-mobile">
             <div>
                 <h1>Comienza a viajar con</h1>
                 <img src="img/logo-blanco.png" alt="logo blanco">
@@ -84,7 +87,7 @@
             <div>
                 <h2>Conduce cuando quieras</h2>
                 <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
-                <a href="#">Conviértete en conductor</a>
+                <a id="beadriver" href="#Driver">Conviértete en conductor</a>
             </div>
         </div>
 
@@ -117,26 +120,73 @@
         </div>
     </section>
 
-    <!-- MODALES -->
+    <!-- MODAL Login -->
+
     <section id="Login" class="hide">
-        <div>
-            <a href="">X</a>
+        <div class="login-text">
+            <div class="container">
+                <div class="frame">
+                    <input type="button" name="close" value="X" id="close">
+                    <div class="nav">
+                        <ul class "links">
+                            <li class="signin-active"><a class="btn">Sign in</a></li>
+                        </ul>
+                    </div>
+                    <div ng-app ng-init="checked = false">
+                    </div>
+                    <form class="form-signin" action="" method="post" name="form">
+                        <label for="username">Username</label>
+                        <input class="form-styling" type="text" name="username" placeholder="" />
+                        <label for="password">Password</label>
+                        <input class="form-styling" type="text" name="password" placeholder="" />
+                        <input type="checkbox" id="checkbox" />
+                        <label for="checkbox"><span class="ui"></span>Keep me signed in</label>
+                        <div class="btn-animate">
+                            <a class="btn-signin">Sign in</a>
+                        </div>
+                    </form>
 
-        </div>
-        <div>
-            <a href="#account">¿Ya tienes una cuenta?</a>
-            <p>Forgot password?</p><a href="#">Click Here</a>
+                    <div>
+                        <a class="a-login" href="#account">¿Ya tienes una cuenta?</a>
+                        <p class="p-login">Forgot password?</p><a href="#">Click Here</a>
 
+                    </div>
+
+                </div>
+            </div>
         </div>
     </section>
-
-    <section id="account" class="hide">
-
-    </section>
-
-
-    <section class="hide"></section>
     </main>
+
+    <!-- Modal Signup -->
+
+    <section id="signup" class="hide">
+        <div class="login-text">
+            <div class="container">
+                <div class="frame">
+                    <input type="button" name="close" value="X" id="close-signup">
+                    <div class="nav">
+                        <ul class "links">
+                            <li class="signin-active"><a class="btn">Sign up</a></li>
+                        </ul>
+                    </div>
+                    <div ng-app ng-init="checked = false">
+                    </div>
+                    <label for="fullname">Full name</label>
+                    <input class="form-styling" type="text" name="fullname" placeholder="" />
+                    <label for="email">Email</label>
+                    <input class="form-styling" type="text" name="email" placeholder="" />
+                    <label for="password">Password</label>
+                    <input class="form-styling" type="text" name="password" placeholder="" />
+                    <label for="confirmpassword">Confirm password</label>
+                    <input class="form-styling" type="text" name="confirmpassword" placeholder="" />
+                    <a ng-click="checked = !checked" class="btn-signup">Como te enteraste de nosotros</a>
+                    <a ng-click="checked = !checked" class="btn-signup">Enviar</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!--FOOTER-->
@@ -146,7 +196,7 @@
                 <figure>
                     <img src="img/logo-blanco.png" alt="logo">
                 </figure>
-                <hr style="color: #ffffff;" />
+                <hr style="border-color:rgb(255, 255, 255);">
             </div>
             <div class="body-footer">
                 <div class="social-media">
@@ -189,7 +239,7 @@
                     </figure>
                 </div>
             </div>
-            <hr style="color: #ffffff;" />
+            <hr style="border-color:rgb(255, 255, 255);">
             <div class="end-footer">
                 <p> &copy; 2017 LabCar technologies Inc.</p>
             </div>
