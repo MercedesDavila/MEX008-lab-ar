@@ -4,6 +4,8 @@ const closeButton = document.getElementById('close');
 const signupButton = document.getElementById('signup-button');
 const closesignup = document.getElementById('close-signup');
 const driverButton = document.getElementById('driver-button');
+const driverButton2 = document.getElementById('driver-button2');
+
 const closedriver = document.getElementById('close-driver');
 
 

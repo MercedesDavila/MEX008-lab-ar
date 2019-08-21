@@ -43,7 +43,7 @@
             <h2 class="hero-subtitle">
                 Eres dueño de tu tiempo.
             </h2>
-            <h2>Viaja con <img src="img/logo-blanco.png" alt="logo blanco"></h2>
+            <h2>Viaja con <img src="img\logo-blanco.png" alt="logo blanco"></h2>
             <button type="button" class="hero-button"><a href="#signup" id="signup-button">
                     REGISTRATE! &raquo;</a>
                </button>
@@ -52,7 +52,7 @@
             <h2 class="hero-subtitle2"><span>
                 o bien
             </span></h2>
-            <button id="driver" type="button" class="hero-button" onclick=""><a id="driver-button" href="#Driver">
+            <button id="driver" type="button" class="hero-button"><a id="driver-button" href="#Driver">
                 Conviértete en un conductor &raquo;</a>
            </button>
         </div>
@@ -60,7 +60,7 @@
         <div class="info-mobile">
             <div>
                 <h1>Comienza a viajar con</h1>
-                <img src="img/logo-blanco.png" alt="logo blanco">
+                <img src="img\logo-blanco.png" alt="logo blanco">
             </div>
             <a href="#" class="white-button">Descarga la app</a>
         </div>
@@ -71,7 +71,7 @@
         <div class="general-info">
             <!--MOBILE-->
             <h2 class="mobile-2">La nueva app</h2>
-            <img src="img/celular.png" alt="cellphone">
+            <img src="img\celular.png" alt="cellphone">
             <!--DESKTOP-->
             <div class="desktop-2">
                 <h2>Descarga la nueva app</h2>
@@ -85,30 +85,30 @@
     </section>
 
     <!--DRIVE-->
-    <section class="drive">
+    <section id="Drive" class="drive">
         <div class="gral-drive">
             <div>
                 <h2>Conduce cuando quieras</h2>
                 <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
-                <a id="driver-button" href="#Driver">Conviértete en conductor</a>
+                <a id="driver-button2" href="#Driver">Conviértete en conductor</a>
             </div>
         </div>
 
     </section>
 
     <!--RATE-->
-    <section class="rate">
+    <section id="Travel" class="rate">
         <div class="gral-rate">
             <div class="rate-rute">
                 <h2>Tarifas</h2>
                 <p>Consulta las tarifas LabCar aquí:</p>
                 <form>
                     <label for="start">
-                            <img src="img/circulo.png" alt="circle">
+                            <img src="img\circulo.png" alt="circle">
                             <input id="start" name="start" type="text" placeholder="Ingrese punto de partida">
                         </label>
                     <label for="end">
-                            <img src="img/flecha.png" alt="arrow">
+                            <img src="img\flecha.png" alt="arrow">
                             <input id="end" name="end" type="text" placeholder="Ingrese un destino">
                         </label>
 
@@ -138,13 +138,13 @@
                     <div class="ng-app ng-init" checked="false">
                     </div>
                     <form class="form-signin" method="post" name="form">
-                        <img src="img/user.png" height="100px" width="100px"><img>
-                        <label for="username">Username</label>
+                        <img src="img\user.png" height="100px" width="100px"><img>
+                        <label>Username</label>
                         <input class="form-styling" type="text" name="username" placeholder="" />
-                        <label for="password">Password</label>
+                        <label>Password</label>
                         <input class="form-styling" type="text" name="password" placeholder="" />
                         <input type="checkbox" id="checkbox" />
-                        <label for="checkbox"><span class="ui"></span>Keep me signed in</label>
+                        <label><span class="ui"></span>Keep me signed in</label>
                         <div class="btn-animate">
                             <a class="btn-signin">Sign in</a>
                         </div>
@@ -173,22 +173,22 @@
                             <li class="signin-active"><a class="btn">Sign up</a></li>
                         </ul>
                     </div>
-                    <div id="ng-app ng-init" checked="false">
+                    <div>
                     </div>
-                    <label for="fullname">Nombre completo</label>
+                    <label>Nombre completo</label>
                     <input class="form-styling" type="text" name="fullname" placeholder=" " />
-                    <label for="email">Correo electronico</label>
+                    <label>Correo electronico</label>
                     <input class="form-styling" type="text" name="email" placeholder="Correo Electronico: ejemplo@correo.com" />
-                    <label for="fullname">Teléfono</label>
+                    <label>Teléfono</label>
                     <input class="form-styling" type="text" name="phone" placeholder="Teléfono" />
-                    <label for="password">Contraseña</label>
+                    <label>Contraseña</label>
                     <input class="form-styling" type="text" name="password" placeholder="Contraseña" />
-                    <label for="confirmpassword">Ciudad</label>
+                    <label>Ciudad</label>
                     <input class="form-styling" type="text" name="city" placeholder="Ciudad" />
-                    <label for="code">Codigo de invitación</label>
+                    <label>Codigo de invitación</label>
                     <input class="form-styling" type="text" name="city" placeholder="(Opcional)Código de activación" />
-                    <a ng-click="checked = !checked" class="btn-signup">Como te enteraste de nosotros</a>
-                    <a ng-click="checked = !checked" class="btn-signup">Enviar</a>
+                    <a class="btn-signup">Como te enteraste de nosotros</a>
+                    <a class="btn-signup">Enviar</a>
 
                 </div>
             </div>
@@ -207,8 +207,7 @@
                             <li class="signin-active"><a class="btn">Conviertete en Conductor.</a></li>
                         </ul>
                     </div>
-                    <div checked="false">
-                    </div>
+
                     <label for="">¿Tienes vehiculo 4 puertas?</label>
                     <div class="custom-select" style="width:250px;">
                         <select>
@@ -254,7 +253,7 @@
                     <label>Número de Matricula</label>
                     <input class="form-styling" type="text" name="email" placeholder="Número de Matricula" />
                     <p2>La información de la matrícula ayuda a los clientes a identificar tu vehículo.</p2>
-                    <a ng-click="checked = !checked" class="btn-signup">Enviar</a>
+                    <a class="btn-signup">Enviar</a>
                 </div>
             </div>
         </div>
