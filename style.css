@@ -670,6 +670,7 @@
             font-weight: 300;
             padding-left: 37px;
             padding-right: 37px;
+            align-items: center;
             /* padding-top: 55px; */
             transition: opacity .5s ease, transform .5s ease;
         }
@@ -907,7 +908,7 @@
             text-align: center;
             color: rgba(255, 255, 255, 1);
             padding-top: 8px;
-            width: 100%;
+            width: 80%;
             height: 35px;
             border: none;
             border-radius: 20px;

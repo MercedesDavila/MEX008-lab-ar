@@ -51,8 +51,8 @@
 
             <h2 class="hero-subtitle2"><span>
                 o bien
-            </h2></span>
-                <button id="driver" type="button" class="hero-button" onclick=""><a id="driver-button" href="#Driver">
+            </span></h2>
+            <button id="driver" type="button" class="hero-button" onclick=""><a id="driver-button" href="#Driver">
                 Conviértete en un conductor &raquo;</a>
            </button>
         </div>
@@ -105,11 +105,11 @@
                 <form>
                     <label for="start">
                             <img src="img/circulo.png" alt="circle">
-                            <input name="start" type="text" placeholder="Ingrese punto de partida">
+                            <input id="start" name="start" type="text" placeholder="Ingrese punto de partida">
                         </label>
                     <label for="end">
                             <img src="img/flecha.png" alt="arrow">
-                            <input name="end" type="text" placeholder="Ingrese un destino">
+                            <input id="end" name="end" type="text" placeholder="Ingrese un destino">
                         </label>
 
 
@@ -131,13 +131,13 @@
                 <div class="frame">
                     <input type="button" name="close" value="X" id="close">
                     <div class="nav">
-                        <ul class "links">
+                        <ul class="links">
                             <li class="signin-active"><a class="btn">Sign in</a></li>
                         </ul>
                     </div>
-                    <div ng-app ng-init="checked = false">
+                    <div class="ng-app ng-init" checked="false">
                     </div>
-                    <form class="form-signin" action="" method="post" name="form">
+                    <form class="form-signin" method="post" name="form">
                         <img src="img/user.png" height="100px" width="100px"><img>
                         <label for="username">Username</label>
                         <input class="form-styling" type="text" name="username" placeholder="" />
@@ -160,7 +160,6 @@
             </div>
         </div>
     </section>
-    </main>
 
     <!-- Modal Signup -->
 
@@ -170,11 +169,11 @@
                 <div class="frame-signup">
                     <input type="button" name="close" value="X" id="close-signup">
                     <div class="nav">
-                        <ul class "links">
+                        <ul class="links">
                             <li class="signin-active"><a class="btn">Sign up</a></li>
                         </ul>
                     </div>
-                    <div ng-app ng-init="checked = false">
+                    <div id="ng-app ng-init" checked="false">
                     </div>
                     <label for="fullname">Nombre completo</label>
                     <input class="form-styling" type="text" name="fullname" placeholder=" " />
@@ -190,7 +189,7 @@
                     <input class="form-styling" type="text" name="city" placeholder="(Opcional)Código de activación" />
                     <a ng-click="checked = !checked" class="btn-signup">Como te enteraste de nosotros</a>
                     <a ng-click="checked = !checked" class="btn-signup">Enviar</a>
-                    </form>
+
                 </div>
             </div>
         </div>
@@ -204,11 +203,11 @@
                 <div class="frame-driver">
                     <input type="button" name="close" value="X" id="close-driver">
                     <div class="nav">
-                        <ul class "links">
+                        <ul class="links">
                             <li class="signin-active"><a class="btn">Conviertete en Conductor.</a></li>
                         </ul>
                     </div>
-                    <div ng-app ng-init="checked = false">
+                    <div checked="false">
                     </div>
                     <label for="">¿Tienes vehiculo 4 puertas?</label>
                     <div class="custom-select" style="width:250px;">
@@ -252,11 +251,10 @@
                                       <option value="3">2019</option>
                                 </select>
                     </div>
-                    <label for="number">Número de Matricula</label>
+                    <label>Número de Matricula</label>
                     <input class="form-styling" type="text" name="email" placeholder="Número de Matricula" />
                     <p2>La información de la matrícula ayuda a los clientes a identificar tu vehículo.</p2>
                     <a ng-click="checked = !checked" class="btn-signup">Enviar</a>
-                    </form>
                 </div>
             </div>
         </div>
